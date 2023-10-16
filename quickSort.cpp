@@ -1,6 +1,13 @@
 #include <iostream>
 #include <vector>
 
+/*
+ * Best Case Scenario with Median of Three: Pivot is median element and divides array into 
+ * two roughly equal halves so: O(nlogn)
+ * Average Case: O(nlogn)
+ * Worse Case: Pivot fails to create balanced splits, making n recursive calls: O(n^2)
+ * Space Complexity: Average: O(log n) Worse: O(n) - If consistently creating bad splits
+*/
 int choosePivot(std::vector<int>& arr, int low, int high) {
     int mid = low + (high - low) / 2;
 
