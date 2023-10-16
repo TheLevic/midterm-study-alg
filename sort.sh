@@ -1,6 +1,6 @@
 #! /bin/bash
 
 echo '----Shell Script to run Sorting Files'
-echo '----Running Bubble Sort'
-g++ -Wall bubbleSort.cpp -o bubbleSort
-./bubbleSort
+echo '----Running Quick Sort'
+g++ -std=c++11 quickSort.cpp -o quickSort
+./quickSort
